@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Article preview component</title>
+
+  <!--stylesheet and fonts 👍 -->
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+  <article class="card">
+    <header class="image__content">
+      <img class="card__image" src="./images/drawers.jpg" alt="card image">
+    </header>
+    <div>
+      <section class="card__content">
+        <h2 class="card_content__title">Shift the overall look and feel by adding these wonderful
+          touches to furniture in your home</h2>
+        <p class="card_content__description">Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.</p>
+      </section>
+
+      <footer id="card__footer" class="card__footer ">
+        <div class="footer__content">
+          <div class="footer__description">
+            <img class="footer__avatar" src="./images/avatar-michelle.jpg" alt="">
+            <div class="footer__info">
+              <p class="footer__author">Michelle Appleton</p>
+              <small class="footer__date"> 28 Jun 2020</small>
+            </div>
+          </div>
+          <div id="share-desktop" class=" share footer__share">
+            <ion-icon id="icon-desktop" class=" share__icon" name="arrow-redo-sharp"></ion-icon>
+          </div>
+        </div>
+      </footer>
+      <footer id="card__footer--hover" class="card__footer--hover">
+        <div class="footer__content">
+          <div class="footer__social">
+            <p class="social__text">SHARE</p>
+
+            <i class="social__icon fab fa-facebook-square"></i>
+            <i class="social__icon fab fa-twitter"></i>
+            <i class="social__icon fab fa-pinterest"></i>
+          </div>
+
+          <div id="share-hover" class=" share  footer__share--hover">
+            <ion-icon class="share__icon--hover" name="arrow-redo-sharp"></ion-icon>
+          </div>
+          <div class="triangle"></div>
+        </div>
+
+
+      </footer>
+
+    </div>
+
+
+  </article>
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">DavidMarioLC</a>.
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

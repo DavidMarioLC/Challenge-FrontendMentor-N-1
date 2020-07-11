@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --darkGrayBlue: hsl(217, 19%, 35%);
+    --darkBlue: hsl(214, 17%, 51%);
+    --grayBlue: hsl(212, 23%, 69%);
+    --lightBlue: hsl(210, 46%, 95%);
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Manrope', sans-serif;
+    background: var(--lightBlue);
+    font-size: 13px;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width:340px;
+    border-radius:1em;
+    background-color:rgb(255, 255, 255);
+
+}
+
+.image__content{
+    width: 100%;
+    height:210px;
+   
+    border-radius: 1em 1em 0 0;
+}
+
+.card__image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:10% 23%;
+    border-radius: .5em .5em 0 0;  
+}
+
+.card__content{
+    padding: 2.5em 2.8em;
+     
+}
+
+.card_content__title{
+    margin-bottom: .8em;
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: 700;
+    font-style: normal;
+    color:var(--darkGrayBlue)
+}
+
+.card_content__description{
+    text-align:left ;
+    color:var(--darkBlue);
+    line-height: 1.5em; 
+    letter-spacing: 0.25px;
+
+}
+
+
+.card__footer{
+    width: 100%;
+    padding: 1em 2.8em;
+
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .2em;
+}
+
+.footer__description{
+    display: flex;
+    align-items: center;
+}
+
+.footer__avatar{
+    width: 15%;
+    border-radius: 50%;
+    margin-right: 1.2em;
+}
+
+.footer__author{
+    font-weight: 700;
+    color: var(--darkGrayBlue);
+
+}
+
+.footer__date{
+    display: block;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing:.1px;
+    color: var(--grayBlue);
+    line-height: 1.8em; 
+}
+
+.footer__share{
+    flex: none;
+    width: 2.4em;
+    height: 2.4em;
+    background-color: var(--lightBlue);
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+}
+
+.share__icon{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 1.4em;
+    color: var(--darkBlue);
+}
+/* class card__footer--hover */
+.card__footer--hover{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    padding: 1em 2.8em;
+    background-color: var(--darkGrayBlue);
+    border-radius: 0em 0em 1em 1em;
+}
+.footer__social{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+   
+  
+}
+.social__text{
+    color: var(--grayBlue);
+    letter-spacing: 5px;
+    margin-right: .5em;
+}
+.social__icon{
+    cursor: pointer;
+    padding: 0em .4em;
+    font-size: 1.6em;
+    color: rgb(255, 255, 255);
+}
+
+.footer__share--hover{
+    flex: none;
+    width: 2.4em;
+    height: 2.4em;
+    background-color: var(--darkBlue);
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+}
+.share__icon--hover{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 1.4em;
+    color: rgb(255, 255, 255);
+}
+.attribution{
+    position: absolute;
+    bottom: 10px;
+ }
+ 
+
+@media (min-width: 900px) {
+    .card{
+        flex-direction: row;
+        width: 700px;
+    }
+    .card__content{
+        padding: 1.6em 2.8em;
+    }
+    .card_content__title{
+        padding-right: 3em;
+    }
+    .image__content{
+        width: 100%;
+       height: auto;
+        
+    }
+    .card__image{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+    object-position:1% 23%;
+    border-radius: .5em 0 0 .5em; 
+       
+    }
+    .card__footer {
+       padding: 1em 2.5em;
+    }
+
+    .card__footer--hover{
+        display: none;
+        border-radius: .5em;
+        width: 220px;
+        height: 50px;
+        top:120px;
+        right: 0;
+        left: 540px;
+        
+        padding: .3em .9em;
+        
+    }
+    .footer__share--hover{
+        display: none;
+    }
+    .footer__content{
+        padding: .8em .5em;
+    }
+    .triangle{
+        position: absolute;
+        right: 100px;
+        top:50px;
+        width: 0; 
+        height: 0; 
+        border-right: 15px solid transparent;
+        border-left: 15px solid transparent ;
+        border-top: 15px solid var(--darkGrayBlue)  ;
+        
+       
+    }
+    .card_content__title{
+
+        padding-bottom:0.8em;
+    }
+    .hidden{
+        display: block;
+    }
+
+    .footer__share:hover {
+        background-color: var(--darkBlue);
+        
+    }
+    
+    .footer__share:hover .share__icon{
+        color: rgb(255, 255, 255);
+    }
+   
+    .attribution{
+       position: absolute;
+       bottom: 10px;
+    }
+    
+  }
